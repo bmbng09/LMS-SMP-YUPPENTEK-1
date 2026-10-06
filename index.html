@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LMS Informatika – SMP YUPPENTEK 1 Legok</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside class="sidebar" id="sidebar" aria-label="Menu utama">
+  <div class="brand">🎓 LMS SMP YUPPENTEK 1</div>
+  <nav id="nav"></nav>
+  <button class="btn light" data-act="help">❓ Petunjuk Penggunaan</button>
+</aside>
+<div class="overlay" id="overlay" data-act="menu"></div>
+
+<div class="shell">
+  <header class="topbar">
+    <button class="icon-btn menu" data-act="menu" aria-label="Buka menu">☰</button>
+    <div class="tb-title"><b>LMS Informatika</b><span id="tbCourse"></span></div>
+    <div class="tb-right">
+      <button class="icon-btn" data-act="notif" aria-label="Notifikasi">🔔<i class="dot"></i></button>
+      <div class="user"><span class="avatar">BI</span><span class="uname">Bambang Istijab</span></div>
+    </div>
+  </header>
+  <main id="main" class="content"></main>
+</div>
+
+<div class="backdrop" id="modal" hidden></div>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
